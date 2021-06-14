@@ -8,4 +8,4 @@ or
 
 yarn create react-app my-app --template typescript
 
--[Ts&React]()
+-[Ts&React](https://github.com/wjdghks963/typescrip-react-demo)
