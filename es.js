@@ -98,3 +98,39 @@ let greetings = ["Hi", "Howdy", "Suup"];
 if(!greetings.includes("Hello")){           // ["Hi", "Howdy", "Suup", "Hello"]
     greetings.push("Hello");
 }
+
+// spread
+
+const car1 = {
+    maker: "kia"
+};
+
+const car2 = {
+    maker: "kia", // = ...car1 
+    color: "red"
+};
+
+const car3 = {
+    maker:"kia",    //
+    color:"blue",   // = ...car2
+    option:"aircon"
+};
+
+console.log(car1)  // Object {maker:"kia"} ...
+
+const animals = ["dog","cat","human"]
+const plusani = [...animals, "kk"]
+
+console.log(plusani)    // ["dog","cat","human", "kk"]
+
+// rest
+
+const something = {
+    name:"cup",
+    maker:"daiso",
+    color:"red",
+    price:"200"
+}
+
+const {color,...rest} = something;
+console.log(something)  // Object {name:"cup",maker:"daiso",price:"200"}
